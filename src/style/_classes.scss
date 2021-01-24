@@ -1,12 +1,11 @@
 .background {
-  background: url('../assets/images/10580228-sushi-plate-with-maki-sushi.jpg') no-repeat;
+  background: url("../assets/images/main_bg.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  //background: red;
 }
 
 .frost-glass {
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba( 255, 255, 255, 0.3 );
   border-radius: 5px;
   position: relative;
   z-index: 1;
@@ -21,8 +20,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
     filter: blur(17px);
     margin: -20px;
   }
+  &.with-shadow {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    &:before {
+      box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.no-bg {
+  background: none !important;
 }
