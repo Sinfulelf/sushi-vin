@@ -1,21 +1,63 @@
 html,
 body {
-  @include full-space;
+  @extend .full-space;
   position: relative;
   margin: 0;
 }
 
 #root {
-  @include full-space;
+  @extend .full-space;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.2em;
+  padding-bottom: 0.7em;
+  @extend .background;
 }
 
 .layout-container {
-  @include full-space;
-  display: flex;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  min-width: 360px;
+  @extend .frost-glass;
+  @extend .box-shadow4-right;
+  overflow: hidden;
+
+  &__data {
+    padding: 0;
+    overflow: auto;
+    @extend .full-space;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 75px;
+    width: 100%;
+    display: flex;
+  }
+
   .content {
     margin: 0 1.5em;
-    @include full-space;
+    @extend .full-space;
     display: flex;
+    flex: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    #root {
+      padding: 0;
+      .layout-container {
+        width: 100%;
+        min-width: 100%;
+        box-shadow: none;
+      }
+    }
   }
 }
