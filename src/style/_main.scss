@@ -1,0 +1,21 @@
+html,
+body {
+  @include full-space;
+  position: relative;
+  margin: 0;
+}
+
+#root {
+  @include full-space;
+  display: flex;
+}
+
+.layout-container {
+  @include full-space;
+  display: flex;
+  .content {
+    margin: 0 1.5em;
+    @include full-space;
+    display: flex;
+  }
+}
