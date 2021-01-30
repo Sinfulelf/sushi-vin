@@ -1,9 +1,17 @@
+@font-face {
+  font-family: Comforta;
+  src: url("../assets/fonts/Comforta.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100vw;
   height: 100vh;
   position: relative;
   margin: 0;
+  font-family: Comforta, Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
 }
 body {
   display: flex;
@@ -31,12 +39,13 @@ body {
   height: 100%;
   width: 100%;
   max-width: 1150px;
-  margin: 0 17%;
+  //margin: 0 17%;
+  margin: 0 17% 0 16%;
   max-height: 100%;
   padding: 0;
   min-width: 580px;
   @extend .frost-glass;
-  @extend .with-shadow;
+  //@extend .with-shadow;
   @extend .box-shadow4-right;
   overflow: hidden;
 
@@ -48,7 +57,7 @@ body {
     overflow-x: hidden;
   }
 
-  .header {
+  .main-header {
     position: relative;
     height: 75px;
     width: 100%;
@@ -56,6 +65,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 0.5em 0 1.75em;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 
     @extend .frost-glass;
     background: rgba( 255, 255, 255, 0.25);
