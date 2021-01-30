@@ -2,6 +2,6 @@ import React from "react";
 
 export default class Contacts extends React.PureComponent {
   render() {
-    return <div></div>;
+    return <div>Contacts page</div>;
   }
 }

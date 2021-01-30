@@ -1,0 +1,25 @@
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  backdrop-filter: blur(14.5px);
+}
+
+.card-item {
+  &__content {
+    display: flex;
+    //background-color: red;
+    position: absolute;
+    min-height: 165px;
+    width: 97.5%;
+    left: 2.5%;
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    @extend .card-glass;
+    box-shadow: 0 16px 32px 0 #1841505e;
+  }
+  &__card {
+    border-radius: 10px;
+  }
+}
