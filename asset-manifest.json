@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sushi-vin/static/css/main.a0486bf2.chunk.css",
-    "main.js": "/sushi-vin/static/js/main.98641a55.chunk.js",
-    "main.js.map": "/sushi-vin/static/js/main.98641a55.chunk.js.map",
+    "main.css": "/sushi-vin/static/css/main.17211844.chunk.css",
+    "main.js": "/sushi-vin/static/js/main.8ea3c4f1.chunk.js",
+    "main.js.map": "/sushi-vin/static/js/main.8ea3c4f1.chunk.js.map",
     "runtime-main.js": "/sushi-vin/static/js/runtime-main.0538893c.js",
     "runtime-main.js.map": "/sushi-vin/static/js/runtime-main.0538893c.js.map",
     "static/css/2.9e4e695a.chunk.css": "/sushi-vin/static/css/2.9e4e695a.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.34053cd5.chunk.js.map": "/sushi-vin/static/js/2.34053cd5.chunk.js.map",
     "index.html": "/sushi-vin/index.html",
     "static/css/2.9e4e695a.chunk.css.map": "/sushi-vin/static/css/2.9e4e695a.chunk.css.map",
-    "static/css/main.a0486bf2.chunk.css.map": "/sushi-vin/static/css/main.a0486bf2.chunk.css.map",
+    "static/css/main.17211844.chunk.css.map": "/sushi-vin/static/css/main.17211844.chunk.css.map",
     "static/js/2.34053cd5.chunk.js.LICENSE.txt": "/sushi-vin/static/js/2.34053cd5.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/sushi-vin/static/media/outline-icons.ddae9b1b.woff"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.0538893c.js",
     "static/css/2.9e4e695a.chunk.css",
     "static/js/2.34053cd5.chunk.js",
-    "static/css/main.a0486bf2.chunk.css",
-    "static/js/main.98641a55.chunk.js"
+    "static/css/main.17211844.chunk.css",
+    "static/js/main.8ea3c4f1.chunk.js"
   ]
 }
