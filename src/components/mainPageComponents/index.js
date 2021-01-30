@@ -4,7 +4,7 @@ import { Header } from "semantic-ui-react";
 import CardItem from "../cardItemComponents";
 
 export default class Main extends React.PureComponent {
-  height = 195
+  height = 222
 
   render() {
     const items = Array(15)
@@ -13,7 +13,6 @@ export default class Main extends React.PureComponent {
         acc.push((acc.length+1)-1);
         return acc;
       }, []);
-    console.log(items);
     return (
       <div className="content__data">
         <Header as="h1">Name of group</Header>

@@ -1,25 +1,102 @@
+$card-height: 165px;
 
 .card-glass {
-  background: rgba(255, 255, 255, 0.6);
+  //background: #abdfeb59;
+  background: linear-gradient(
+    180deg,
+    rgba(238, 245, 249, 1) 0%,
+    rgba(238, 245, 249, 0.7) 33%,
+    rgba(238, 245, 249, 0.1) 42%,
+    rgba(238, 245, 249, 0.1) 58%,
+    rgba(238, 245, 249, 0.7) 77%,
+    rgba(238, 245, 249, 1) 100%
+  );
   border: none;
   backdrop-filter: blur(14.5px);
+  box-shadow: 0 16px 32px 0 #1841505e;
+}
+
+.card-btn {
+  border: none;
+  backdrop-filter: blur(17px);
+  box-shadow: 0 16px 32px 0 #1841505e;
+  backdrop-filter: blur(14.5px);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  transition: all 0.05s ease-in-out, background 0.1s ease-in;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  &:hover {
+    background: rgb(79, 114, 130);
+    color: #f0f7fa;
+    transform: scale(1.04);
+  }
+  &:active {
+    transform: scale(0.99);
+  }
 }
 
 .card-item {
   &__content {
+    z-index: 2;
     display: flex;
     //background-color: red;
     position: absolute;
-    min-height: 165px;
-    width: 97.5%;
-    left: 2.5%;
+    min-height: $card-height;
+    width: 100%;
     border-radius: 25px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     @extend .card-glass;
-    box-shadow: 0 16px 32px 0 #1841505e;
   }
-  &__card {
+  &__data {
+    display: flex;
+    flex: 1;
+    &-thub {
+      height: $card-height;
+      flex: 0 0 $card-height;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+  }
+
+  &__info-btn {
+    @extend .card-btn;
+    background: rgba(255, 255, 255, 0.9);
+    top: -20px;
+    height: 40px;
+    width: 68px;
+    left: 6.5em;
     border-radius: 10px;
   }
+
+  &__buy-btn {
+    @extend .card-btn;
+    background: #7ebad6;
+    bottom: -31px;
+    height: 69px;
+    width: 168px;
+    right: 0.5em;
+    border-radius: 10px;
+
+    font-size: 1.28571429rem;
+    font-weight: 700;
+  }
+}
+
+.card-white-line {
+  position: absolute;
+  min-height: $card-height;
+  width: 99%;
+  background: #ffffffad;
+  z-index: 1;
+  border-radius: 25px;
 }

@@ -19,6 +19,12 @@
   display: flex;
 }
 
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .no-bg {
   background: none !important;
 }
