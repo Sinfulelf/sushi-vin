@@ -46,7 +46,8 @@ $card-height: 167px;
 .card-item {
   //position: absolute;
   min-height: $card-height;
-  width: 100%;
+  width: 95%;
+  margin-left: 5%;
   background: #ffffffad;
   z-index: 1;
   border-radius: 25px;

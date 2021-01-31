@@ -37,14 +37,13 @@ export default class Main extends React.PureComponent {
       }, []);
     return (
       <div className="content__data">
-        <Header as="h1">Name of group</Header>
         <div className="content__data-body">
-          <AutoSizer disableHeight className="main-list">
-            {({ width }) => (
+          <AutoSizer  className="main-list">
+            {({ width, height }) => (
               <List
                 ref={this.setListRef}
                 width={width}
-                height={items.length * this.height + 35}
+                height={height-15}
                 rowCount={items.length}
                 rowHeight={this.height}
                 rowRenderer={this.rowRenderer}
@@ -53,6 +52,7 @@ export default class Main extends React.PureComponent {
             )}
           </AutoSizer>
         </div>
+        <Header as="h1">Name of group</Header>
       </div>
     );
   }

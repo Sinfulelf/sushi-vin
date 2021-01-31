@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0.5em 0 1.75em;
+    //padding: 0 0.5em 0 1.75em;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -86,12 +86,12 @@ body {
   }
 
   .content {
-    margin: 0 1.5em;
+    //margin: 0 1.5em;
     width: 100%;
     display: flex;
     flex: 1 1 auto;
     &__data {
-      padding: 0.5em 1.2em 0 0;
+      //padding: 0.5em 1.2em 0 0;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -106,18 +106,19 @@ body {
         flex-direction: column;
         position: relative;
         flex: 1;
-        margin-top: 20px;
-
+        margin-top: 18px;
+        margin-bottom: 10px;
         .main-list {
           & > div[role="grid"] {
-            overflow: visible !important;
+            //overflow: visible !important;
             outline: none;
             & > div[role="rowgroup"] {
-              overflow: visible !important;
+              //overflow: visible !important;
 
               .list-row {
                 display: flex;
-                align-items: center;
+                align-items: end;
+                margin-top: 18px;
               }
             }
           }
