@@ -7,16 +7,15 @@ export default class CardItem extends React.PureComponent {
     const { top } = this.props;
 
     return (
-      <>
-        <div className="card-white-line ellipsis" style={{ top: top }}></div>
-        <div className="card-item__content" style={{ top }}>
+      <div className="card-item">
+        <div className="card-item__content">
           <CardContent />
           <div className="card-item__info-btn">
             ⬤&nbsp;&nbsp;&nbsp;⬤&nbsp;&nbsp;&nbsp;⬤
           </div>
           <div className="card-item__buy-btn">Add to basket</div>
         </div>
-      </>
+      </div>
     );
   }
 }
